@@ -38,7 +38,7 @@ def _():
 
 @app.cell
 def _(parse):
-    def get_pass_1(input):
+    def get_pass_1(input, title):
         val = 50
         targets = 0
         for inp in parse(input):
@@ -50,14 +50,14 @@ def _(parse):
             if val == 0:
                 targets += 1
             #print(f'rotated {inp} to {val}')
-        print(f'Passcode is {targets}')
+        print(f'Passcode for {title} is {targets}')
     return (get_pass_1,)
 
 
 @app.cell
 def _(get_pass_1, sample):
     #test
-    get_pass_1(sample)
+    get_pass_1(sample, "part 1 test")
     return
 
 
@@ -71,13 +71,13 @@ def _():
 
 @app.cell
 def _(dat, get_pass_1):
-    get_pass_1(dat)
+    get_pass_1(dat, "part 1")
     return
 
 
 @app.cell
 def _(parse):
-    def get_pass_2(input):
+    def get_pass_2(input, title):
         val = 50
         targets = 0
         for inp in parse(input):
@@ -93,7 +93,7 @@ def _(parse):
                     targets += 1
                     # print('hit 0')
             # print(f'added {inp} for {val}')
-        print(f'Passcode is {targets}')
+        print(f'Passcode for {title} is {targets}')
 
     return (get_pass_2,)
 
@@ -101,13 +101,13 @@ def _(parse):
 @app.cell
 def _(get_pass_2, sample):
     #test
-    get_pass_2(sample)
+    get_pass_2(sample, 'part 2 test')
     return
 
 
 @app.cell
 def _(dat, get_pass_2):
-    get_pass_2(dat)
+    get_pass_2(dat, "part 2")
     return
 
 
