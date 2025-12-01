@@ -1,7 +1,7 @@
 [project]
 name = "aoc-2025"
 version = "0.1.0"
-description = "Add your description here"
+description = "Advent of Code project for 2025 using Python"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
