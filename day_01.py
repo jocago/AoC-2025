@@ -42,14 +42,9 @@ def _(parse):
         val = 50
         targets = 0
         for inp in parse(input):
-            val += inp
-            while val < 0:
-                val += 100
-            while val > 99:
-                val -= 100
+            val = (val + inp) % 100  # Wraps between 0 and 99
             if val == 0:
                 targets += 1
-            #print(f'rotated {inp} to {val}')
         print(f'Passcode for {title} is {targets}')
     return (get_pass_1,)
 
@@ -84,14 +79,9 @@ def _(parse):
             # print('-----')
             incr = 1 if inp >= 0 else -1
             for _ in range(abs(inp)):
-                val += incr
-                if val > 99:
-                    val -= 100
-                elif val < 0:
-                    val += 100
+                val = (val + incr) % 100  # Also wraps between 0 and 99
                 if val == 0:
                     targets += 1
-                    # print('hit 0')
             # print(f'added {inp} for {val}')
         print(f'Passcode for {title} is {targets}')
 
