@@ -4,4 +4,6 @@ version = "0.1.0"
 description = "Advent of Code project for 2025 using Python"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "marimo>=0.18.1",
+]
