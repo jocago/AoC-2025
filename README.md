@@ -48,6 +48,11 @@ Each day's solution is a marimo notebook that can be run interactively:
 ```bash
 marimo edit day_01.py
 ```
+or
+
+```bash
+uv run marimo edit day_01.py
+```
 
 This opens the notebook in your browser with a reactive interface where cells automatically re-execute when dependencies change.
 
