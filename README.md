@@ -38,6 +38,12 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) using Pyth
 
 3. Install dependencies:
    ```bash
+   uv add [module]
+   ```
+   
+   or
+
+   ```bash
    uv pip install -e .
    ```
 
