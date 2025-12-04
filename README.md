@@ -6,7 +6,7 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) using Pyth
 
 - [x] Day 1
 - [x] Day 2
-- [ ] Day 3
+- [x] Day 3
 - [ ] Day 4
 - [ ] Day 5
 - [ ] Day 6
@@ -16,6 +16,9 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) using Pyth
 - [ ] Day 10
 - [ ] Day 11
 - [ ] Day 12
+
+
+Note: No input file is upload per the rules of the contest so the code will be looking for *_input.txt files that do not exist in the repote repo.
 
 ## Tech Stack
 
